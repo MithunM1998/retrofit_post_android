@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="15dp"
+       android:padding="15dp"
+       android:layout_marginTop="15dp"
+       android:id="@+id/enter_title"
+       android:hint="enter title"
+       />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/enter_body"
+        android:hint="enter body"
+        android:layout_below="@+id/enter_title"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/post"
+        android:layout_below="@+id/enter_body"
+        android:text="post"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post"
+        android:id="@+id/recyclerView"
+        />
+</RelativeLayout>
